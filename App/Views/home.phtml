@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Blog</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="/<?=$crypt->datacrypt('home-controller')?>~<?=$crypt->datacrypt('viewHome')?>">Accueil</a></li>
+                    <li><a href="/<?=$crypt->datacrypt('home-controller')?>~<?=$crypt->datacrypt('viewArticles')?>">Nos articles</a></li>
+                    <li><a href="/">Nous contactez</a></li>
+                    <li><a href="/">A propos</a></li>
+                </ul>
+            </nav>
+            <a href="/">Se connecter</a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Blog</h2>
+            <img src="" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis temporibus nulla rerum ab esse dolorem?</p>
+        </section>
+        <form method="post">
+            <input type="email" name="email" id="email">
+            <input type="text" name="pseudo" id="pseudo">
+            <input type="password" name="password" id="password">
+            <input type="password" name="confirm_pass" id="confirm_pass">
+            <button id="validation_inscription">Valider</button>
+        </form>
+        <!-- <section>
+            <h2>Nos catégories d'articles</h2>
+            <ul>
+                <li><a href="">Dépannage</a></li>
+                <li><a href="">Dépannage</a></li>
+                <li><a href="">Dépannage</a></li>
+            </ul>
+        </section> -->
+        <!-- <section></section> -->
+    </main>
+
+    <footer>
+        
+    </footer>
+    <script src="/ressources/js/inscription.js"></script>
+</body>
+</html>
